@@ -1,7 +1,5 @@
-import React from 'react'
-
 export default function ActionsButtonRow() {
-  return (
+	return (
 		<>
 			<div className="buttons-row">
 				<button className="button" id="reset">
