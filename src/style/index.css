@@ -32,6 +32,13 @@ p {
 	margin: 0;
 }
 
+.logo {
+	width: 100%;
+	position: relative;
+	bottom: 10rem;
+	border-radius: 1rem;
+}
+
 .buttons {
 	align-self: center;
 	display: flex;
