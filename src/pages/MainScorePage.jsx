@@ -6,7 +6,7 @@ import logo from '../assets/logoTS.webp'
 export default function MainScorePage() {
 	return (
 		<>
-			<img src={logo} className='logo' alt="logo" />
+			<img src={logo} className="logo" alt="logo" />
 			<ScoreDisplay />
 			<div className="buttons">
 				<PlayersButtonRow />
