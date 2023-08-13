@@ -1,7 +1,7 @@
 import ActionsButtonRow from '../components/ActionsButtonRow'
 import PlayersButtonRow from '../components/PlayersButtonRow'
 import ScoreDisplay from '../components/ScoreDisplay'
-import logo from '../assets/logo.webp'
+import logo from '../assets/logoTS.webp'
 
 export default function MainScorePage() {
 	return (
