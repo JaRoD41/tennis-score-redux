@@ -1,6 +1,7 @@
 import ActionsButtonRow from '../components/ActionsButtonRow'
 import PlayersButtonRow from '../components/PlayersButtonRow'
 import ScoreDisplay from '../components/ScoreDisplay'
+// import CounterTest from '../components/CounterTest'
 import logo from '../assets/logoTS.webp'
 
 export default function MainScorePage() {
@@ -8,6 +9,7 @@ export default function MainScorePage() {
 		<>
 			<img src={logo} className="logo" alt="logo" />
 			<ScoreDisplay />
+			{/* <CounterTest /> */}
 			<div className="buttons">
 				<PlayersButtonRow />
 				<ActionsButtonRow />
