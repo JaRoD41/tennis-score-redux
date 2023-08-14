@@ -23,12 +23,15 @@ export const counter = createSlice({
 	initialState,
 	// The `reducers` field lets us define reducers and generate associated actions
 	reducers: {
-		increment: (state, action) => {
-			state.player1 ++
+		player1Scored: (state, action) => {
+			state.player1++
+		},
+		player2Scored: (state, action) => {
+			state.player2++
 		},
 	},
 })
 
 console.log('counter :', counter)
-export const { increment } = counter.actions
+export const { player1Scored, player2Scored } = counter.actions
 export default counter.reducer
