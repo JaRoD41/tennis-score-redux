@@ -21,17 +21,17 @@ const initialState = {
 export const counter = createSlice({
 	name: 'counter',
 	initialState,
-	// The `reducers` field lets us define reducers and generate associated actions
+	// Les reducers sont des fonctions qui vont modifier le state
 	reducers: {
-		player1Scored: (state, action) => {
-			state.player1++
-		},
-		player2Scored: (state, action) => {
-			state.player2++
+		playPause: (state) => {
+      state.playing = !state.playing
+    },
+		playerScored: (state, action) => {
+			state[action.payload.player]++
 		},
 	},
 })
 
 console.log('counter :', counter)
-export const { player1Scored, player2Scored } = counter.actions
+export const { playerScored, playPause } = counter.actions
 export default counter.reducer
