@@ -25,9 +25,15 @@ export const counter = createSlice({
 		playerScored: (state, action) => {
 			state[action.payload.player]++
 		},
+		resetGame: (state) => {
+			state.player1 = 0
+			state.player2 = 0
+			state.advantage = null
+			state.winner = null
+		}
 	},
 })
 
 console.log('counter :', counter)
-export const { playerScored, playPause } = counter.actions
+export const { playerScored, playPause, resetGame } = counter.actions
 export default counter.reducer
