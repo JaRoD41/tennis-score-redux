@@ -14,18 +14,14 @@ const initialState = {
 	playing: true,
 }
 
-// const initialState = {
-//   value: 0,
-// }
-
 export const counter = createSlice({
 	name: 'counter',
 	initialState,
 	// Les reducers sont des fonctions qui vont modifier le state
 	reducers: {
 		playPause: (state) => {
-      state.playing = !state.playing
-    },
+			state.playing = !state.playing
+		},
 		playerScored: (state, action) => {
 			state[action.payload.player]++
 		},
