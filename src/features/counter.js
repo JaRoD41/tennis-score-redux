@@ -19,12 +19,15 @@ export const counter = createSlice({
 	initialState,
 	// Les reducers sont des fonctions qui vont modifier le state
 	reducers: {
+		// Je crée un reducer qui va changer la valeur de playing pour les pauses
 		playPause: (state) => {
 			state.playing = !state.playing
 		},
+		// Je crée un reducer qui va ajouter un point au joueur qui a marqué
 		playerScored: (state, action) => {
 			state[action.payload.player]++
 		},
+		// Je crée un reducer qui va remettre à zéro le jeu
 		resetGame: (state) => {
 			state.player1 = 0
 			state.player2 = 0
@@ -35,5 +38,6 @@ export const counter = createSlice({
 })
 
 console.log('counter :', counter)
+// J'exporte les actions du reducer counter afin de les utiliser dans mon composant
 export const { playerScored, playPause, resetGame } = counter.actions
 export default counter.reducer
