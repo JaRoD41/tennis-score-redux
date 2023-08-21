@@ -27,6 +27,7 @@ export const counter = createSlice({
 		playerScored: (state, action) => {
 			const player = action.payload.player
 			const otherPlayer = player === 'player1' ? 'player2' : 'player1'
+			// Si le joueur a l'avantage et marque, il gagne
 			if (state[player] === 40 && state[otherPlayer] === 40) {
 				state.advantage = player
 			} else if (state.advantage === player) {
